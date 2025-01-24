@@ -7,4 +7,98 @@
     android:layout_height="match_parent"
     tools:context=".pelanggan.tambahpelanggan">
 
+    <TextView
+        android:id="@+id/tvtambahpelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TAMBAH PELANGGAN"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:layout_marginTop="80dp"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:padding="15dp"
+        android:hint="Nama Lengkap"
+        android:background="@drawable/radius"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:layout_marginTop="180dp"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1"/>
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:padding="15dp"
+        android:hint="Alamat"
+        android:background="@drawable/radius"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No.HP Aktif"
+        android:layout_marginTop="280dp"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"/>
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:padding="15dp"
+        android:hint="No.HP Aktif"
+        android:background="@drawable/radius"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4"/>
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:padding="15dp"
+        android:text="SIMPAN"
+        android:background="@drawable/radius"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="#81BFDA"
+        app:layout_constraintTop_toBottomOf="@+id/et3"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
