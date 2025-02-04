@@ -1,4 +1,4 @@
-package com.gabriella15.laundry.pelanggan
+package com.gabriella15.laundry.laundry
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
