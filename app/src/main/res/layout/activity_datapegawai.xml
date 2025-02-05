@@ -6,19 +6,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pelanggan.datapelanggan">
+    tools:context=".Pegawai.datapegawai">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvdatapelanggan"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/carddatapelanggan"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvdatapelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/carddatapegawai"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/datapengguna_tambah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
