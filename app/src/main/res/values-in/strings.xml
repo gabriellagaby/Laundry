@@ -14,4 +14,11 @@
     <string name="Simpan">SIMPAN</string>
     <string name="Tambah_Pelanggan">Tambah Pelanggan</string>
     <string name="Tambah_Pegawai">Tambah Pegawai</string>
+    <string name="Nama_Layanan">Nama Layanan</string>
+    <string name="Harga">Harga</string>
+    <string name="ID_LAYANAN">ID LAYANAN</string>
+    <string name="validasi_etNama">Nama Tidak Boleh Kosong</string>
+    <string name="validasi_etalamat">Alamat</string>
+    <string name="validasi_etnohp">NoHP</string>
+    <string name="validasi_etcabang">Cabang</string>
 </resources>

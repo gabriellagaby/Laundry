@@ -14,4 +14,11 @@
     <string name="Simpan">SAVE</string>
     <string name="Tambah_Pelanggan">Add Customer</string>
     <string name="Tambah_Pegawai">Add Employee</string>
+    <string name="Nama_Layanan">Servis Name</string>
+    <string name="Harga">Price</string>
+    <string name="ID_LAYANAN">SERVIS ID</string>
+    <string name="validasi_etNama">Name Cannot Be Empty</string>
+    <string name="validasi_etalamat">Addres</string>
+    <string name="validasi_etnohp">Number Phone</string>
+    <string name="validasi_etcabang">Branch</string>
 </resources>

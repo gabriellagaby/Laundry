@@ -11,9 +11,8 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvdatapelanggan"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="130dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         app:cardCornerRadius="20dp"
@@ -25,8 +24,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/card_pelanggan_id"
-            android:id="@+id/tvidpelanggan"
+            android:text="@string/ID_LAYANAN"
+            android:id="@+id/tvidlayanan"
             android:textSize="15sp"
             android:textStyle="bold"
             android:background="#6482AD"
@@ -36,7 +35,7 @@
             android:id="@+id/nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Nama_Pelanggan"
+            android:text="@string/Nama_Layanan"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +47,7 @@
             android:id="@+id/alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ALAMAT"
+            android:text="@string/Harga"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@id/nama"
@@ -60,37 +59,13 @@
             android:id="@+id/nohp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/No_Hp"
+            android:text="@string/Cabang"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@id/alamat"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="95dp"
             android:layout_marginStart="10dp"/>
-
-        <Button
-            android:id="@+id/hubungi"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Hubungi"
-            app:layout_constraintTop_toBottomOf="@+id/hp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="130dp"
-            android:backgroundTint="#FCC737"/>
-
-        <Button
-            android:id="@+id/lihat"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Lihat"
-            app:layout_constraintTop_toBottomOf="@+id/hp"
-            app:layout_constraintStart_toEndOf="@+id/hubungi"
-            android:backgroundTint="#86D293"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="130dp"/>
-
-
 
 
     </androidx.cardview.widget.CardView>

@@ -8,12 +8,12 @@
     tools:context=".Pegawai.tambahpelanggan">
 
     <TextView
-        android:id="@+id/tvtambahpelanggan"
+        android:id="@+id/tvJudul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/Tambah_Pelanggan"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et1"
+        android:id="@+id/etNama"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -50,9 +50,9 @@
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et1"/>
+        app:layout_constraintTop_toBottomOf="@+id/etNama"/>
     <EditText
-        android:id="@+id/et2"
+        android:id="@+id/etalamat"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -72,9 +72,9 @@
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et2"/>
+        app:layout_constraintTop_toBottomOf="@+id/etalamat"/>
     <EditText
-        android:id="@+id/et3"
+        android:id="@+id/etnohp"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -85,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv4"/>
     <EditText
-        android:id="@+id/et4"
+        android:id="@+id/etSimpan"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -98,7 +98,7 @@
         android:textStyle="bold"
         android:gravity="center"
         android:backgroundTint="#81BFDA"
-        app:layout_constraintTop_toBottomOf="@+id/et5"/>
+        app:layout_constraintTop_toBottomOf="@+id/etcabang"/>
 
     <TextView
         android:id="@+id/tv5"
@@ -110,9 +110,9 @@
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et4"/>
+        app:layout_constraintTop_toBottomOf="@id/etnohp"/>
     <EditText
-        android:id="@+id/et5"
+        android:id="@+id/etcabang"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"

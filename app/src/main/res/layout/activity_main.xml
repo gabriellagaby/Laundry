@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#D4E2D4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D4E2D4"
     tools:context=".MainActivity">
 
     <TextView
@@ -23,15 +23,15 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="08 Januari 2025"
-        android:textAlignment="textEnd"
-        android:layout_marginTop="50dp"
-        android:textSize="18sp" />
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
-        android:layout_width="370dp"
+        android:layout_width="359dp"
         android:layout_height="180dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="90dp"
@@ -56,13 +56,13 @@
             android:id="@+id/tvharga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rp. 40.000,-"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="10dp"
+            android:text="Rp. 0.000,-"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="260dp"
             tools:ignore="MissingConstraints" />
 
         <ImageView
@@ -71,32 +71,34 @@
             android:layout_height="65dp"
             android:layout_marginStart="35dp"
             android:layout_marginTop="55dp"
-            android:src="@drawable/transaksi"/>
+            android:src="@drawable/transaksi" />
+
         <TextView
             android:id="@+id/beli"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Transaksi"
-            android:textSize="14sp"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="140dp"/>
+            android:layout_marginTop="140dp"
+            android:text="Transaksi"
+            android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/Pelanggan"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:layout_marginRight="@id/beli"
             android:layout_marginStart="165dp"
             android:layout_marginTop="55dp"
-            android:src="@drawable/pelanggan"/>
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pelanggan" />
+
         <TextView
             android:id="@+id/buy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pelanggan"
-            android:textSize="14sp"
             android:layout_marginStart="165dp"
-            android:layout_marginTop="140dp"/>
+            android:layout_marginTop="140dp"
+            android:text="Pelanggan"
+            android:textSize="16dp" />
 
         <ImageView
             android:id="@+id/Laporan"
@@ -104,42 +106,44 @@
             android:layout_height="65dp"
             android:layout_marginStart="285dp"
             android:layout_marginTop="55dp"
-            android:src="@drawable/laporan"/>
+            android:src="@drawable/laporan" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Laporan"
-            android:textSize="14sp"
-            android:textStyle="normal"
             android:layout_marginStart="295dp"
-            android:layout_marginTop="140dp"/>
+            android:layout_marginTop="140dp"
+            android:text="Laporan"
+            android:textSize="16sp"
+            android:textStyle="normal" />
     </androidx.cardview.widget.CardView>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Siap melayani pelanggan dengan setulus hati"
         android:layout_marginStart="25dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginTop="280dp"
+        android:layout_marginEnd="15dp"
+        android:text="Siap melayani pelanggan dengan setulus hati"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jangan kecewakan pelanggan"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginTop="300dp"
-        android:textSize="14sp"
+        android:layout_marginEnd="15dp"
+        android:text="Jangan kecewakan pelanggan"
+        android:textSize="16sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.cardview.widget.CardView
@@ -154,19 +158,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:src="@drawable/akun"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:src="@drawable/akun" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Akun"
-            android:textSize="15sp"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="85dp"/>
+            android:layout_marginTop="85dp"
+            android:text="Akun"
+            android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -185,16 +191,17 @@
         <ImageView
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:src="@drawable/laundry"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:src="@drawable/laundry" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Layanan"
-            android:textSize="15sp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="85dp"/>
+            android:layout_marginTop="85dp"
+            android:text="Layanan"
+            android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -213,16 +220,17 @@
         <ImageView
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:src="@drawable/tambah"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:src="@drawable/tambah" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Tambahan"
-            android:textSize="15sp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="85dp"/>
+            android:layout_marginTop="85dp"
+            android:text="Tambahan"
+            android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -237,12 +245,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:src="@drawable/pegawai"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:src="@drawable/pegawai" />
 
         <TextView
             android:layout_width="match_parent"
@@ -250,7 +259,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="85dp"
             android:text="Pegawai"
-            android:textSize="15dp"
+            android:textSize="16dp"
             tools:ignore="TextSizeCheck" />
     </androidx.cardview.widget.CardView>
 
@@ -270,9 +279,9 @@
         <ImageView
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:src="@drawable/cabang"
             android:layout_marginStart="22dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cabang" />
 
         <TextView
             android:layout_width="match_parent"
@@ -280,7 +289,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="85dp"
             android:text="Cabang"
-            android:textSize="15dp"
+            android:textSize="16dp"
             tools:ignore="TextSizeCheck" />
     </androidx.cardview.widget.CardView>
 
@@ -300,9 +309,9 @@
         <ImageView
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:src="@drawable/printer"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:src="@drawable/printer" />
 
         <TextView
             android:layout_width="match_parent"
@@ -310,14 +319,9 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="85dp"
             android:text="Printer"
-            android:textSize="15dp"
+            android:textSize="16dp"
             tools:ignore="TextSizeCheck" />
     </androidx.cardview.widget.CardView>
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
