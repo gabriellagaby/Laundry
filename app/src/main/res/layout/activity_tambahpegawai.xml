@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pegawai.tambahpelanggan">
+    tools:context=".pelanggan.tambahpegawai">
 
     <TextView
-        android:id="@+id/tvtambahpelanggan"
+        android:id="@+id/tvtambahpegawai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

@@ -1,5 +1,6 @@
 package com.gabriella15.laundry.pelanggan
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -17,9 +18,8 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class  datapelanggan : AppCompatActivity() {
-    private lateinit var layoutManager: LinearLayoutManager
-    val database =FirebaseDatabase.getInstance()
+class DataPelanggan : AppCompatActivity() {
+    val database = FirebaseDatabase.getInstance()
     val myRef = database.getReference("pelanggan")
     lateinit var rvdatapelanggan: RecyclerView
     lateinit var fabdata_pengguna_tambah: FloatingActionButton
@@ -29,13 +29,17 @@ class  datapelanggan : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_datapelanggan)
+
         init()
+
         val layoutManager = LinearLayoutManager(this)
         layoutManager.reverseLayout = true
         layoutManager.stackFromEnd = true
-        rvdatapelanggan.layoutManager=layoutManager
+        rvdatapelanggan.layoutManager = layoutManager
         rvdatapelanggan.setHasFixedSize(true)
-        pelangganList = arrayListOf(ModelPelanggan())
+
+        pelangganList = arrayListOf<ModelPelanggan>()
+        tekan()
         getData()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -45,31 +49,39 @@ class  datapelanggan : AppCompatActivity() {
         }
     }
 
-    fun init(){
+    fun init() {
         rvdatapelanggan = findViewById(R.id.rvdatapelanggan)
         fabdata_pengguna_tambah = findViewById(R.id.fabdatapengguna_tambah)
     }
 
-    fun getData(){
-        val query =myRef.orderByChild("idpelanggan").limitToLast(100)
+    fun getData() {
+        val query = myRef.orderByChild("idpelanggan").limitToLast(100)
         query.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()){
+                if (snapshot.exists()) {
                     pelangganList.clear()
-                    for (dataSnapshoot in snapshot.children){
-                        val pegawai = dataSnapshoot.getValue(ModelPelanggan::class.java)
-                        pelangganList.add(pegawai!!)
+                    for (dataSnapshot in snapshot.children) {
+                        val pelanggan = dataSnapshot.getValue(ModelPelanggan::class.java)
+                        if (pelanggan != null) {
+                            pelangganList.add(pelanggan!!)
+                        }
                     }
                     val adapter = adapterdatapelanggan(pelangganList)
-                    rvdatapelanggan.adapter= adapter
+                    rvdatapelanggan.adapter = adapter
                     adapter.notifyDataSetChanged()
                 }
-
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(this@datapelanggan, error.message, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@DataPelanggan, error.message, Toast.LENGTH_SHORT).show()
             }
         })
+    }
+
+    fun tekan() {
+        fabdata_pengguna_tambah.setOnClickListener {
+            val intent = Intent(this, tambahpelanggan::class.java)
+            startActivity(intent)
+        }
     }
 }

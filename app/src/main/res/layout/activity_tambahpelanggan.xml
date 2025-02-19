@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pegawai.tambahpelanggan">
+    tools:context=".pelanggan.tambahpelanggan">
 
     <TextView
         android:id="@+id/tvJudul"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/tvnama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Nama_Pelanggan"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etNama"
+        android:id="@+id/etNamapel"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -39,9 +39,9 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv2"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvnama"/>
     <TextView
-        android:id="@+id/tv3"
+        android:id="@+id/tvalamat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ALAMAT"
@@ -50,9 +50,9 @@
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNama"/>
+        app:layout_constraintTop_toBottomOf="@+id/etNamapel"/>
     <EditText
-        android:id="@+id/etalamat"
+        android:id="@+id/etalamatpel"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -61,9 +61,9 @@
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv3"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvalamat"/>
     <TextView
-        android:id="@+id/tv4"
+        android:id="@+id/tvnohp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/No_Hp"
@@ -72,9 +72,9 @@
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etalamat"/>
+        app:layout_constraintTop_toBottomOf="@+id/etalamatpel"/>
     <EditText
-        android:id="@+id/etnohp"
+        android:id="@+id/etnohppel"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -83,25 +83,10 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv4"/>
-    <EditText
-        android:id="@+id/etSimpan"
-        android:layout_width="375dp"
-        android:layout_height="55dp"
-        android:padding="15dp"
-        android:text="@string/Simpan"
-        android:background="@drawable/radius"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:backgroundTint="#81BFDA"
-        app:layout_constraintTop_toBottomOf="@+id/etcabang"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvnohp"/>
 
     <TextView
-        android:id="@+id/tv5"
+        android:id="@+id/tvcabangpel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Cabang"
@@ -110,9 +95,9 @@
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etnohp"/>
+        app:layout_constraintTop_toBottomOf="@id/etnohppel"/>
     <EditText
-        android:id="@+id/etcabang"
+        android:id="@+id/etcabangpel"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -121,7 +106,15 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv5"/>
-
+        app:layout_constraintBottom_toTopOf="@+id/btsimpan"
+        app:layout_constraintTop_toBottomOf="@+id/tvcabangpel"/>
+    <Button
+        android:id="@+id/btsimpan"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:text="simpan"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/etcabangpel"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

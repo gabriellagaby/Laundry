@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvsalam"
+        android:id="@+id/Welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/Calendar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="08 Januari 2025"
@@ -60,7 +61,7 @@
             android:layout_marginTop="10dp"
             android:text="Rp. 0.000,-"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
@@ -98,7 +99,7 @@
             android:layout_marginStart="165dp"
             android:layout_marginTop="140dp"
             android:text="Pelanggan"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/Laporan"
@@ -259,7 +260,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="85dp"
             android:text="Pegawai"
-            android:textSize="16dp"
+            android:textSize="16sp"
             tools:ignore="TextSizeCheck" />
     </androidx.cardview.widget.CardView>
 
@@ -289,7 +290,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="85dp"
             android:text="Cabang"
-            android:textSize="16dp"
+            android:textSize="16sp"
             tools:ignore="TextSizeCheck" />
     </androidx.cardview.widget.CardView>
 
@@ -319,7 +320,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="85dp"
             android:text="Printer"
-            android:textSize="16dp"
+            android:textSize="16sp"
             tools:ignore="TextSizeCheck" />
     </androidx.cardview.widget.CardView>
 

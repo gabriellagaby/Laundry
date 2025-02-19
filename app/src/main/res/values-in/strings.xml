@@ -21,4 +21,8 @@
     <string name="validasi_etalamat">Alamat</string>
     <string name="validasi_etnohp">NoHP</string>
     <string name="validasi_etcabang">Cabang</string>
+    <string name="errorsimpan">Gagal Menyimpan</string>
+    <string name="Validasi_Terrdaftar_Pelanggan">Validasi_Terrdaftar_Pelanggan</string>
+    <string name="tambah_pelanggan_sukses">tambah_pelanggan_sukses</string>
+    <string name="tambah_pelanggan_gagal">tambah_pelanggan_gagal</string>
 </resources>

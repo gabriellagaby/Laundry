@@ -21,4 +21,7 @@
     <string name="validasi_etalamat">Addres</string>
     <string name="validasi_etnohp">Number Phone</string>
     <string name="validasi_etcabang">Branch</string>
+    <string name="errorsimpan">Failed to Saved</string>
+    <string name="Validasi_Terrdaftar_Pelanggan">Customer_Registered_Validation</string>
+    <string name="tambah_pelanggan_sukses">add_customer_success</string>
 </resources>
