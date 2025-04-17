@@ -5,20 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Layanan">
+    tools:context=".Cabang.DataCabangActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvdatalayanan"
+        android:id="@+id/rvdatacabang"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/cardlayanan"/>
+        tools:listitem="@layout/carddatacabang"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabdatalayanan_tambah"
+            android:id="@+id/fabdataCabang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -26,7 +26,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:src="@drawable/baseline_add_24"
-            android:contentDescription="tambah layanan"/>
+            android:contentDescription="tambah pegawai"/>
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

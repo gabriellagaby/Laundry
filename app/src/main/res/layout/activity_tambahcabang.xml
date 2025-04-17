@@ -5,24 +5,25 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pegawai.tambahpegawai">
+    tools:context=".Cabang.TambahanCabang"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/tvtambahpegawai"
+        android:id="@+id/tvtambahCabang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/Tambah_Pegawai"
+        android:text="Tambah Cabang"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/tvnamacabang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Nama_Pegawai"
+        android:text="Nama Cabang"
         android:layout_marginTop="80dp"
         android:textSize="20dp"
         android:layout_marginStart="20dp"
@@ -30,62 +31,62 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etNamapgw"
+        android:id="@+id/etNamacabang"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
-        android:hint="@string/Nama_Pegawai"
+        android:hint="Nama Cabang"
         android:background="@drawable/radius"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv2"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvnamacabang"/>
     <TextView
-        android:id="@+id/tv3"
+        android:id="@+id/tvmanagercabang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ALAMAT"
+        android:text="Manager Cabang"
         android:layout_marginTop="180dp"
         android:textSize="20dp"
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNamapgw"/>
+        app:layout_constraintTop_toBottomOf="@+id/etNamacabang"/>
     <EditText
-        android:id="@+id/etalamatpgw"
+        android:id="@+id/etalamatcabang"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
-        android:hint="@string/ALAMAT"
+        android:hint="Manager Cabang"
         android:background="@drawable/radius"
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv3"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvmanagercabang"/>
     <TextView
-        android:id="@+id/tv4"
+        android:id="@+id/tvalamatcabang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/No_Hp"
+        android:text="Alamat"
         android:layout_marginTop="280dp"
         android:textSize="20dp"
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etalamatpgw"/>
+        app:layout_constraintTop_toBottomOf="@+id/etalamatcabang"/>
     <EditText
-        android:id="@+id/etnohppgw"
+        android:id="@+id/etnohpcabang"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
-        android:hint="@string/No_Hp"
+        android:hint="Alamat"
         android:background="@drawable/radius"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv4"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvalamatcabang"/>
     <Button
-        android:id="@+id/btsimpanpgw"
+        android:id="@+id/btsimpancabang"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
@@ -101,27 +102,29 @@
         app:layout_constraintTop_toBottomOf="@+id/etcabangpgw"/>
 
     <TextView
-        android:id="@+id/tv5"
+        android:id="@+id/tvnohpcbg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Cabang"
+        android:text="No.Hp"
         android:layout_marginTop="380dp"
         android:textSize="20dp"
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etnohppgw"/>
+        app:layout_constraintTop_toBottomOf="@id/etnohpcabang"/>
     <EditText
         android:id="@+id/etcabangpgw"
         android:layout_width="375dp"
         android:layout_height="55dp"
         android:padding="15dp"
-        android:hint="@string/Cabang"
+        android:hint="No.hp"
         android:background="@drawable/radius"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv5"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvnohpcbg"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout><?xml version="1.0" encoding="utf-8"?>
+
+
