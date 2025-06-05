@@ -3,6 +3,7 @@ package com.gabriella15.laundry
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.content.Intent
+import android.provider.ContactsContract.Profile
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -10,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.gabriella15.laundry.Cabang.DataCabangActivity
+import com.gabriella15.laundry.Cabang.profil
 import com.gabriella15.laundry.Pegawai.tambahpegawai
 import com.gabriella15.laundry.pelanggan.DataPelanggan
 import com.gabriella15.laundry.pelanggan.tambahpelanggan
@@ -18,7 +21,7 @@ import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 
-class MainActivity : AppCompatActivity() {
+class   MainActivity : AppCompatActivity() {
     lateinit var Pelanggan : ImageView
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,11 +68,26 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Layanan::class.java)
             startActivity(intent)
         }
-        val cardMasuktambah = findViewById<CardView>(R.id.card4)
-        cardMasuktambah.setOnClickListener {
-            val intent = Intent(this, tambahpelanggan::class.java)
+        val cardMasukProfil = findViewById<CardView>(R.id.profil)
+        cardMasukProfil.setOnClickListener {
+            val intent = Intent(this, profil::class.java)
             startActivity(intent)
         }
+
+        val cardMasuktransaksi= findViewById<ImageView>(R.id.transaksi)
+        cardMasuktransaksi.setOnClickListener {
+            val intent = Intent(this,datatransaksi::class.java)
+            startActivity(intent)
+        }
+        val cardMasukcabang= findViewById<CardView>(R.id.card6)
+        cardMasukcabang.setOnClickListener {
+            val intent = Intent(this, DataCabangActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

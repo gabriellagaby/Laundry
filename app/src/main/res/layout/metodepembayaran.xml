@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:elevation="8dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran"
+        android:textSize="26sp"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Metode Pembayaran"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tombol Metode Pembayaran -->
+    <Button
+        android:id="@+id/btnBayarNanti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bayar Nanti"
+        android:backgroundTint="#F44336"
+        android:textColor="@android:color/white"
+        android:layout_marginVertical="4dp"/>
+
+    <Button
+        android:id="@+id/btnTunai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tunai"
+        android:backgroundTint="#FF9800"
+        android:textColor="@android:color/white"
+        android:layout_marginVertical="4dp"/>
+
+    <Button
+        android:id="@+id/btnQRIS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QRIS"
+        android:backgroundTint="#FF5722"
+        android:textColor="@android:color/white"
+        android:layout_marginVertical="4dp"/>
+
+    <Button
+        android:id="@+id/btnDANA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DANA"
+        android:backgroundTint="#00BCD4"
+        android:textColor="@android:color/white"
+        android:layout_marginVertical="4dp"/>
+
+    <Button
+        android:id="@+id/btnGoPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GoPay"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginVertical="4dp"/>
+
+    <Button
+        android:id="@+id/btnOVO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OVO"
+        android:backgroundTint="#9C27B0"
+        android:textColor="@android:color/white"
+        android:layout_marginVertical="4dp"/>
+
+</LinearLayout>

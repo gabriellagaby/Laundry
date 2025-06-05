@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardtransaksi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <!-- Data Pelanggan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Pelanggan"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvpelnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pelanggan:"
+        android:textSize="16sp"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:id="@+id/nohppel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No HP:"
+        android:textSize="16dp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/PilihPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Pelanggan"
+        android:backgroundTint="#27548A"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Layanan Utama -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layanan Utama"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Layanan:"
+        android:textSize="16dp"
+        android:layout_marginTop="17dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga:"
+        android:textSize="16dp"
+        android:layout_marginTop="18dp"/>
+
+
+
+    <Button
+        android:id="@+id/Pilihlayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Layanan"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#27548A"/>
+
+    <!-- Layanan Tambahan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layanan Tambahan"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <!-- Tombol Tambahan & Proses -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="380dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btTambahan"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Tambahan"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#DDA853"/>
+
+        <Button
+            android:id="@+id/btProses"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Proses"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#89AC46"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvpilpelanggan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Header dengan background warna -->
+        <TextView
+            android:id="@+id/tvidpilpel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="[1]"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="#E5989B"
+            android:textColor="#000000"
+            android:padding="8dp" />
+
+
+        <!-- Isi konten pelanggan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvnamapilpel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gabriella"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvalamatpilpel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat : Magelang"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvnohppilpel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No HP : 085123456789"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -55,7 +55,7 @@
             android:text="@string/ALAMAT"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/nama"
+            app:layout_constraintTop_toBottomOf="@id/Namapgw"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="68dp"
             android:layout_marginStart="10dp"/>
@@ -67,7 +67,7 @@
             android:text="@string/No_Hp"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/alamat"
+            app:layout_constraintTop_toBottomOf="@id/alamatpgw"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="90dp"
             android:layout_marginStart="10dp"/>
@@ -78,7 +78,7 @@
             android:text="@string/Terdaftar"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/nohp"
+            app:layout_constraintTop_toBottomOf="@id/nohppgw"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="110dp"
             android:layout_marginStart="10dp"/>

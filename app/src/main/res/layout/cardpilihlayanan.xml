@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvpelanggan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    tools:context=".pelanggan.DataPelanggan">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvpilihpelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[4]"
+            android:id="@+id/tvidpelanggan"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="#6482AD"
+            android:textColor="#181C14"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/namapel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuci Basah 5kg"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvidpelanggan"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"/>
+        <TextView
+            android:id="@+id/alamatpel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga : Rp.15.000,00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/namapel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvpilihpelanggan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="120dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[5]"
+            android:id="@+id/tvnopilpel"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="#6482AD"
+            android:textColor="#181C14"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/tvnamapilpel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuci Basah 8kg"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvidpelanggan"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"/>
+        <TextView
+            android:id="@+id/tvalamatpilpel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga : Rp.20.000,00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/namapel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvpilihpelanggan3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="240dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[6]"
+            android:id="@+id/tvnopilpel2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="#6482AD"
+            android:textColor="#181C14"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/tvnamapilpel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuci Setrika 8kg"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvidpelanggan"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"/>
+        <TextView
+            android:id="@+id/tvalamatpilpel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga : Rp.35.000,00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/namapel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvpilihpelanggan4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="360dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[6]"
+            android:id="@+id/tvnopilpel3"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="#6482AD"
+            android:textColor="#181C14"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/tvnamapilpel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuci Setrika 8kg"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvidpelanggan"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"/>
+        <TextView
+            android:id="@+id/tvalamatpilpel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga : Rp.25.000,00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/namapel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

@@ -7,13 +7,12 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.gabriella15.laundry.R
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.gabriella15.laundry.modeldata.ModelPelanggan
 
 
-class adapterdatapelanggan(
+class adapter_datapelanggan(
     private val pelangganList: ArrayList<ModelPelanggan>
-) : RecyclerView.Adapter<adapterdatapelanggan.ViewHolder>() {
+) : RecyclerView.Adapter<adapter_datapelanggan.ViewHolder>() {
     override  fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int

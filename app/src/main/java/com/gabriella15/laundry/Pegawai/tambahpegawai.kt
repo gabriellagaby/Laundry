@@ -4,6 +4,7 @@ import android.os.Build
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresApi
@@ -67,22 +68,27 @@ class tambahpegawai : AppCompatActivity() {
         val alamat = intent.getStringExtra("alamatPegawai")
         val hp = intent.getStringExtra("noHPPegawai")
         val cabang = intent.getStringExtra("idcabang")
-        judul.text=judul
+
+        val tvJudul = findViewById<TextView>(R.id.tvJudul) // Ganti dengan ID TextView yang sesuai
+        tvJudul.text = judul
+
         etNamapgw.setText(nama)
         etalamatpgw.setText(alamat)
         etnohppgw.setText(hp)
         etcabangpgw.setText(cabang)
-        if(!judul.text.equals("tambahpegawai")){
-            if (judul.equals("EditPegawai")){
+
+        if (judul != "tambahpegawai") {
+            if (judul == "EditPegawai") {
                 mati()
-                btsimpan.text="Sunting"
+                btsimpan.text = "Sunting"
             }
-        }else{
+        } else {
             hidup()
             etNamapgw.requestFocus()
-            btsimpan.text="Simpan"
+            btsimpan.text = "Simpan"
         }
     }
+
     fun mati(){
         etNamapgw.isEnabled=false
         etalamatpgw.isEnabled=false
@@ -96,31 +102,31 @@ class tambahpegawai : AppCompatActivity() {
         etcabangpgw.isEnabled=true
     }
     @RequiresApi(Build.VERSION_CODES.O)
-    fun update(){
+    fun update() {
         val pegawaiRef = database.getReference("pegawai").child(idPegawai)
+
         val data = ModelPegawai(
-            idPegawai,
-            etNamapgw.text.toString(),
-            etalamatpgw.text.toString(),
-            etnohppgw.text.toString(),
-            etcabangpgw.text.toString()
-        // Buat  Map untuk update data
-        val updateData = mutableMapof <String, Any>()
-        updateData("NamaPegawai") = data.NamaPegawai.toString()
-        updateData("AlamatPegawai") = data.AlamatPegawai.toString()
-        updateData("noHPPegawai") = data.noHPPegawai.toString()
-        updateData("idCabang") = data.idCabang.toString()
+            idpegawai = idPegawai,
+            Namapgw = etNamapgw.text.toString(),
+            alamatpgw = etalamatpgw.text.toString(),
+            nohppgw = etnohppgw.text.toString(),
+            cabangpgw = etcabangpgw.text.toString()
+        )
 
+        val updateData = mutableMapOf<String, Any>()
+        updateData["NamaPegawai"] = data.Namapgw ?: ""
+        updateData["AlamatPegawai"] = data.alamatpgw ?: ""
+        updateData["noHPPegawai"] = data.nohppgw ?: ""
+        updateData["idCabang"] = data.cabangpgw ?: ""
 
-        val updateData
         pegawaiRef.updateChildren(updateData).addOnSuccessListener {
-            Toast.makeText(this@tambahpegawai,"Data Pegawai Berhasil Diperbarui", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@tambahpegawai, "Data Pegawai Berhasil Diperbarui", Toast.LENGTH_SHORT).show()
             finish()
-        }.addOnFailureListener{
+        }.addOnFailureListener {
             Toast.makeText(this@tambahpegawai, "Data Pegawai Gagal Diperbarui", Toast.LENGTH_SHORT).show()
         }
-
     }
+
     fun simpan() {
         val pegawaiBaru = myRef.push() // Membuat node baru di Firebase
         val idpegawai = pegawaiBaru.key // Ambil ID dari Firebase, hentikan jika null

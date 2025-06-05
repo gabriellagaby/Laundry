@@ -15,12 +15,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
-
-        <activity android:name=".Pegawai.tambahpegawai"
-            android:exported="false"/>
-        <activity android:name=".Layanan"
-            android:exported="false"/>
-
+        <activity
+            android:name=".MetodepembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitymetodepembayaranMain2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DatatambahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelanggan.PilihpelangganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PilihlayananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Pegawai.tambahpegawai"
+            android:exported="false" />
+        <activity
+            android:name=".Layanan"
+            android:exported="false" />
         <activity
             android:name=".dialog"
             android:exported="false" />

@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.gabriella15.laundry.R
-import com.gabriella15.laundry.adapter.adapterdatapelanggan
+import com.gabriella15.laundry.adapter.adapter_datapelanggan
 import com.gabriella15.laundry.modeldata.ModelPelanggan
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DataSnapshot
@@ -66,7 +66,7 @@ class DataPelanggan : AppCompatActivity() {
                             pelangganList.add(pelanggan!!)
                         }
                     }
-                    val adapter = adapterdatapelanggan(pelangganList)
+                    val adapter = adapter_datapelanggan(pelangganList)
                     rvdatapelanggan.adapter = adapter
                     adapter.notifyDataSetChanged()
                 }

@@ -1,4 +1,4 @@
-package com.gabriella15.laundry.Layanan
+package com.gabriella15.laundry.datalayanan
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.gabriella15.laundry.R
+import com.gabriella15.laundry.adapter.adapterdatalayanan
 import com.gabriella15.laundry.modeldata.ModelLayanan
 import com.gabriella15.laundry.pelanggan.tambahpelanggan
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -80,7 +81,7 @@ class Datalayanan: AppCompatActivity() {
 
     fun tekan() {
         fabdata_layanan_tambah.setOnClickListener {
-            val intent = Intent(this, tambahlayanan::class.java)
+            val intent = Intent(this, tambahpelanggan::class.java)
             startActivity(intent)
         }
     }

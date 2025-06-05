@@ -87,7 +87,7 @@
         <ImageView
             android:id="@+id/Pelanggan"
             android:layout_width="65dp"
-            android:layout_height="65dp"
+            android:layout_height="55dp"
             android:layout_marginStart="155dp"
             android:layout_marginTop="55dp"
             android:layout_marginRight="16dp"
@@ -277,7 +277,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="65dp"
+            android:layout_width="54dp"
             android:layout_height="65dp"
             android:layout_marginStart="22dp"
             android:layout_marginTop="20dp"

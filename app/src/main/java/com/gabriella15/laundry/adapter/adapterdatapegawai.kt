@@ -1,5 +1,6 @@
 package com.gabriella15.laundry.adapter
 
+import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -7,23 +8,19 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.gabriella15.laundry.R
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.gabriella15.laundry.Pegawai.tambahpegawai
+import com.gabriella15.laundry.R
 import com.gabriella15.laundry.modeldata.ModelPegawai
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.core.Context
 
-
-class adapterdatapegawai(
+class AdapterDataPegawai(
     private val pegawaiList: ArrayList<ModelPegawai>
-) : RecyclerView.Adapter<adapterdatapegawai.ViewHolder>() {
-    lateinit var appContext: Context
-    lateinit var databaseReference: DatabaseReference
-    override  fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): ViewHolder {
+) : RecyclerView.Adapter<AdapterDataPegawai.ViewHolder>() {
+
+    private lateinit var appContext: Context
+    private lateinit var databaseReference: DatabaseReference
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.carddatapegawai, parent, false)
         appContext = parent.context
@@ -31,44 +28,48 @@ class adapterdatapegawai(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val item = pegawaiList[position]
 
-        val item =pegawaiList [position];
-        holder.tvidpegawai.text = item.idpegawai
-        holder.Namapgw.text = item.Namapgw
-        holder.alamatpgw.text = item.alamatpgw
-        holder.nohppgw.text =item.nohppgw
-        holder.cabangpgw.text =item.cabangpgw
-        holder.cvpegawai.setOnClickListener {
+        holder.tvIdPegawai.text = item.idpegawai
+        holder.tvNamaPgw.text = item.Namapgw
+        holder.tvAlamatPgw.text = item.alamatpgw
+        holder.tvNoHpPgw.text = item.nohppgw
+        holder.tvCabangPgw.text = item.cabangpgw
+
+        holder.cardView.setOnClickListener {
+            val intent = Intent(appContext, tambahpegawai::class.java)
+            intent.putExtra("Judul", "Edit Pegawai")
+            intent.putExtra("idPegawai", item.idpegawai)
+            intent.putExtra("namaPegawai", item.Namapgw)
+            intent.putExtra("noHPPegawai", item.nohppgw)
+            intent.putExtra("alamatPegawai", item.alamatpgw)
+            intent.putExtra("idcabang", item.cabangpgw)
+            appContext.startActivity(intent)
         }
-        holder.bthubungipgw.setOnClickListener {
+
+        // Implementasi klik tombol jika diperlukan
+        holder.btHubungiPgw.setOnClickListener {
+            // Misal: buka dialer
+            val intent = Intent(Intent.ACTION_DIAL)
+            intent.data = android.net.Uri.parse("tel:${item.nohppgw}")
+            appContext.startActivity(intent)
         }
-        holder.btLihatpgw.setOnClickListener {
+
+        holder.btLihatPgw.setOnClickListener {
+            // Tambahkan aksi sesuai kebutuhan
         }
     }
-    holder.cvpegawai.setOnClickListener{
-        val intent = Intent(appContext, tambahpegawai::class.java)
-        intent.putExtra("Judul", "Edit Pegawai")
-        intent.putExtra("idPegawai", item.idpegawai)
-        intent.putExtra("namaPegawai", item.namapegawai)
-        intent.putExtra("noHPPegawai", item.noHPegawai)
-        intent.putExtra("alamatPegawai", item.alamatpegawai)
-        intent.putExtra("idcabang", item.idcabang)
-        appContext .startActivity(intent)
-    }
-    override fun getItemCount(): Int {
-        return pegawaiList.size
-    }
+
+    override fun getItemCount(): Int = pegawaiList.size
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val cvpegawai = itemView.findViewById<View>(R.id.cvpegawai)
-        val tvidpegawai = itemView.findViewById<TextView>(R.id.idpegawai)
-        val Namapgw = itemView.findViewById<TextView>(R.id.Namapgw)
-        val alamatpgw = itemView.findViewById<TextView>(R.id.alamatpgw)
-        val nohppgw = itemView.findViewById<TextView>(R.id.nohppgw)
-        val cabangpgw = itemView.findViewById<TextView>(R.id.cabangpgw)
-        val bthubungipgw = itemView.findViewById<Button>(R.id.hubungipgw)
-        val btLihatpgw = itemView.findViewById<Button>(R.id.lihatpgw)
-
+        val cardView: View = itemView.findViewById(R.id.cvpegawai)
+        val tvIdPegawai: TextView = itemView.findViewById(R.id.idpegawai)
+        val tvNamaPgw: TextView = itemView.findViewById(R.id.Namapgw)
+        val tvAlamatPgw: TextView = itemView.findViewById(R.id.alamatpgw)
+        val tvNoHpPgw: TextView = itemView.findViewById(R.id.nohppgw)
+        val tvCabangPgw: TextView = itemView.findViewById(R.id.cabangpgw)
+        val btHubungiPgw: Button = itemView.findViewById(R.id.hubungipgw)
+        val btLihatPgw: Button = itemView.findViewById(R.id.lihatpgw)
     }
 }
-

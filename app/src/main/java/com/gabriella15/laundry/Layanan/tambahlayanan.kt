@@ -1,4 +1,4 @@
-package com.gabriella15.laundry.Layanan
+package com.gabriella15.laundry.tambahlayanan
 
 import android.os.Bundle
 import android.widget.Button
@@ -11,6 +11,7 @@ import com.gabriella15.laundry.modeldata.ModelLayanan
 import com.google.firebase.database.FirebaseDatabase
 
 class LayananLaundry : AppCompatActivity() {
+
     val database = FirebaseDatabase.getInstance()
     val myRef = database.getReference("layanan")
 
@@ -84,11 +85,13 @@ class LayananLaundry : AppCompatActivity() {
         val layananBaru = myRef.push()
         val layanan = layananBaru.key
 
+
+
         val data = ModelLayanan(
             layanan = layanan,
-            namalyn = namalyn.text.toString().toDouble(),
-            hargalyn = cbCuciKering.isChecked,
-            cabanglyn = cbCuciSetrika.isChecked,
+            namalyn = namalyn.text.toString(),
+            hargalyn = cbCuciKering.isChecked.toString(),
+            cabanglyn = cbCuciSetrika.isChecked.toString(),
         )
 
         layananBaru.setValue(data)
