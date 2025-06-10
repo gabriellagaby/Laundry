@@ -1,13 +1,13 @@
 package com.gabriella15.laundry.pelanggan
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.gabriella15.laundry.R
-
 import com.gabriella15.laundry.adapter.Adapterpilihpelanggan
+import com.gabriella15.laundry.R
 import com.gabriella15.laundry.modeldata.ModelPelanggan
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -29,7 +29,7 @@ class PilihpelangganActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pilihpelanggan)
 
-        recyclerView = findViewById(R.id.rvdatapilpel) // Sesuaikan ID RecyclerView
+        recyclerView = findViewById(R.id.rvdatapelanggan) // Sesuaikan ID RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
 

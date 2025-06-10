@@ -25,4 +25,19 @@
     <string name="Validasi_Terrdaftar_Pelanggan">Validasi_Terrdaftar_Pelanggan</string>
     <string name="tambah_pelanggan_sukses">tambah_pelanggan_sukses</string>
     <string name="tambah_pelanggan_gagal">tambah_pelanggan_gagal</string>
+    <string name="validasitransaksi3">validasi transaksi 3</string>
+    <string name="idcabangtakvalid">Id Cabang Tak Valid</string>
+    <string name="Datacabangsucceeddelete">Data Cabang Berhasil Dihapus</string>
+    <string name="Datacabangkosong">Data Cabang Kosong</string>
+    <string name="validasitransaksi1">validasi transaksi 1</string>
+    <string name="validasitransaksi2">validasitransaksi2</string>
+    <string name="Selamatpagi">Selamat Pagi</string>
+    <string name="SelamatSiang">Selamat Siang</string>
+    <string name="SelamatMalam">Selamat Malam</string>
+    <string name="layanan_dihapus">Layanan Dihapus</string>
+    <string name="namapelanggan">Nama Pelanggan</string>
+    <string name="batalmemilihpelanggan">Batal Memilih Pelanggan</string>
+    <string name="batalmemilihlayanan">Batal Memilih Layanan</string>
+    <string name="namalayanan">Nama Layanan</string>
+    <string name="hargalayanan">Harga Layanan</string>
 </resources>

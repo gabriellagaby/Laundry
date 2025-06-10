@@ -13,9 +13,9 @@ import com.gabriella15.laundry.R
 import com.gabriella15.laundry.modeldata.ModelPegawai
 import com.google.firebase.database.DatabaseReference
 
-class AdapterDataPegawai(
+class adapterdatapegawai(
     private val pegawaiList: ArrayList<ModelPegawai>
-) : RecyclerView.Adapter<AdapterDataPegawai.ViewHolder>() {
+) : RecyclerView.Adapter<adapterdatapegawai.ViewHolder>() {
 
     private lateinit var appContext: Context
     private lateinit var databaseReference: DatabaseReference

@@ -18,7 +18,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class DataPelanggan : AppCompatActivity() {
+class Datapelanggan : AppCompatActivity() {
     val database = FirebaseDatabase.getInstance()
     val myRef = database.getReference("pelanggan")
     lateinit var rvdatapelanggan: RecyclerView
@@ -73,14 +73,14 @@ class DataPelanggan : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(this@DataPelanggan, error.message, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Datapelanggan, error.message, Toast.LENGTH_SHORT).show()
             }
         })
     }
 
     fun tekan() {
         fabdata_pengguna_tambah.setOnClickListener {
-            val intent = Intent(this, tambahpelanggan::class.java)
+            val intent = Intent(this, Tambahpelanggan::class.java)
             startActivity(intent)
         }
     }

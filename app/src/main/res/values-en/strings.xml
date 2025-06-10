@@ -24,4 +24,20 @@
     <string name="errorsimpan">Failed to Saved</string>
     <string name="Validasi_Terrdaftar_Pelanggan">Customer_Registered_Validation</string>
     <string name="tambah_pelanggan_sukses">add_customer_success</string>
+    <string name="validasitransaksi3">transaction validation 1</string>
+    <string name="idcabangtakvalid">Invalid Branch Id</string>
+    <string name="Datacabangsucceeddelete">Branch Data Successfully Deleted</string>
+    <string name="Datacabangkosong">Branch Data is Empty</string>
+    <string name="tambah_pelanggan_gagal">add_customer_failed</string>
+    <string name="validasitransaksi1">transaction validation 1</string>
+    <string name="validasitransaksi2">transaction validation 2</string>
+    <string name="Selamatpagi">Good Morning</string>
+    <string name="SelamatSiang">Good Afternoon</string>
+    <string name="SelamatMalam">Good Night</string>
+    <string name="layanan_dihapus">service removed</string>
+    <string name="namapelanggan">Customer Name</string>
+    <string name="batalmemilihpelanggan">Cancel Customer Select</string>
+    <string name="batalmemilihlayanan">Cancel Selecting Service</string>
+    <string name="namalayanan">Service Name</string>
+    <string name="hargalayanan">Service Price</string>
 </resources>

@@ -19,112 +19,124 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvnamacabang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama Cabang"
-        android:layout_marginTop="80dp"
-        android:textSize="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvtambahCabang" />
 
     <EditText
         android:id="@+id/etNamacabang"
-        android:layout_width="375dp"
+        android:layout_width="0dp"
         android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:padding="15dp"
         android:hint="Nama Cabang"
         android:background="@drawable/radius"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvnamacabang"/>
+
     <TextView
         android:id="@+id/tvmanagercabang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Manager Cabang"
-        android:layout_marginTop="180dp"
-        android:textSize="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNamacabang"/>
+
     <EditText
-        android:id="@+id/etalamatcabang"
-        android:layout_width="375dp"
+        android:id="@+id/etManagercabang"
+        android:layout_width="0dp"
         android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:padding="15dp"
         android:hint="Manager Cabang"
         android:background="@drawable/radius"
-        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvmanagercabang"/>
+
     <TextView
         android:id="@+id/tvalamatcabang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Alamat"
-        android:layout_marginTop="280dp"
-        android:textSize="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etalamatcabang"/>
+        app:layout_constraintTop_toBottomOf="@+id/etManagercabang"/>
+
     <EditText
-        android:id="@+id/etnohpcabang"
-        android:layout_width="375dp"
+        android:id="@+id/etAlamatcabang"
+        android:layout_width="0dp"
         android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:padding="15dp"
         android:hint="Alamat"
         android:background="@drawable/radius"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvalamatcabang"/>
-    <Button
-        android:id="@+id/btsimpancabang"
-        android:layout_width="375dp"
-        android:layout_height="55dp"
-        android:padding="15dp"
-        android:text="@string/Simpan"
-        android:background="@drawable/radius"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:backgroundTint="#81BFDA"
-        app:layout_constraintTop_toBottomOf="@+id/etcabangpgw"/>
 
     <TextView
         android:id="@+id/tvnohpcbg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No.Hp"
-        android:layout_marginTop="380dp"
-        android:textSize="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etnohpcabang"/>
+        app:layout_constraintTop_toBottomOf="@+id/etAlamatcabang"/>
+
     <EditText
-        android:id="@+id/etcabangpgw"
-        android:layout_width="375dp"
+        android:id="@+id/etNohpcabang"
+        android:layout_width="0dp"
         android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:padding="15dp"
         android:hint="No.hp"
+        android:inputType="phone"
         android:background="@drawable/radius"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvnohpcbg"/>
 
+    <Button
+        android:id="@+id/btsimpancabang"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:padding="15dp"
+        android:text="@string/Simpan"
+        android:background="@drawable/radius"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="#81BFDA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNohpcabang"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout><?xml version="1.0" encoding="utf-8"?>
-
-
+</androidx.constraintlayout.widget.ConstraintLayout>

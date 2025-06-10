@@ -7,11 +7,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
-    tools:context=".pelanggan.DataPelanggan">
+    tools:context=".pelanggan.Datapelanggan">
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvLayananTambahan"
+        android:id="@+id/cvaromaterapi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -59,7 +59,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvLayananTambahan2"
+        android:id="@+id/cvaromamawar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -108,7 +108,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvpilihpelanggan3"
+        android:id="@+id/cvaromakasturi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -134,7 +134,7 @@
             android:id="@+id/layanantambahan3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pewangi Aroma Kasutri"
+            android:text="Pewangi Aroma Kasturi"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -156,7 +156,7 @@
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvpilihpelanggan4"
+        android:id="@+id/cvpemutihpakaian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -179,7 +179,7 @@
             android:textColor="#181C14"
             android:padding="8dp"/>
         <TextView
-            android:id="@+id/layanantambahan5"
+            android:id="@+id/pemutihtambahan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pemutih Pakaian"

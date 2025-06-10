@@ -1,4 +1,4 @@
-package com.gabriella15.laundry.datalayanan
+package com.gabriella15.laundry.Layanan
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,9 +10,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.gabriella15.laundry.R
-import com.gabriella15.laundry.adapter.adapterdatalayanan
+import com.gabriella15.laundry.adapter.DataLayananAdapter
 import com.gabriella15.laundry.modeldata.ModelLayanan
-import com.gabriella15.laundry.pelanggan.tambahpelanggan
+import com.gabriella15.laundry.pelanggan.Tambahpelanggan
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -67,7 +67,7 @@ class Datalayanan: AppCompatActivity() {
                             layananList.add(layanan!!)
                         }
                     }
-                    val adapter = adapterdatalayanan(layananList)
+                    val adapter = DataLayananAdapter(layananList)
                     rvdatalayanan.adapter = adapter
                     adapter.notifyDataSetChanged()
                 }
@@ -81,7 +81,7 @@ class Datalayanan: AppCompatActivity() {
 
     fun tekan() {
         fabdata_layanan_tambah.setOnClickListener {
-            val intent = Intent(this, tambahpelanggan::class.java)
+            val intent = Intent(this, Tambahpelanggan::class.java)
             startActivity(intent)
         }
     }

@@ -1,4 +1,4 @@
-package com.gabriella15.laundry.pelanggan
+package com.gabriella15.laundry.Pegawai
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -46,7 +46,7 @@ class Datapegawai: AppCompatActivity() {
         getData()
         fabdata_pegawai_tambah.setOnClickListener {
             val intent = Intent(this, tambahpegawai::class.java)
-            intent.putExtra("judul", this.getString(R.string.pegawai_tambah))
+            intent.putExtra("judul", this.getString(R.string.Tambah_Pegawai))
             intent.putExtra("idPegawai","")
             intent.putExtra("namaPegawai","")
             intent.putExtra("noHPPegawai","")

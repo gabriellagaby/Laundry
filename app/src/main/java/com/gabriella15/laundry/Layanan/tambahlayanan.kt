@@ -1,4 +1,4 @@
-package com.gabriella15.laundry.tambahlayanan
+package com.gabriella15.laundry.Layanan
 
 import android.os.Bundle
 import android.widget.Button
@@ -10,7 +10,7 @@ import com.gabriella15.laundry.R
 import com.gabriella15.laundry.modeldata.ModelLayanan
 import com.google.firebase.database.FirebaseDatabase
 
-class LayananLaundry : AppCompatActivity() {
+class tambahlayanan : AppCompatActivity() {
 
     val database = FirebaseDatabase.getInstance()
     val myRef = database.getReference("layanan")
@@ -84,14 +84,34 @@ class LayananLaundry : AppCompatActivity() {
     fun simpan() {
         val layananBaru = myRef.push()
         val layanan = layananBaru.key
+        val berat = etBerat.text.toString().toDoubleOrNull() ?: 0.0
 
+        // Hitung harga total
+        var totalHarga = 0.0
+        val layananDipilih = mutableListOf<String>()
 
+        if (cbCuciKering.isChecked) {
+            totalHarga += 5000 * berat
+            layananDipilih.add("Cuci Kering")
+        }
+        if (cbCuciSetrika.isChecked) {
+            totalHarga += 7000 * berat
+            layananDipilih.add("Cuci + Setrika")
+        }
+        if (cbSetrikaSaja.isChecked) {
+            totalHarga += 4000 * berat
+            layananDipilih.add("Setrika Saja")
+        }
+        if (cbCuciSprei.isChecked) {
+            totalHarga += 10000 * berat
+            layananDipilih.add("Cuci Sprei")
+        }
 
         val data = ModelLayanan(
             layanan = layanan,
-            namalyn = namalyn.text.toString(),
-            hargalyn = cbCuciKering.isChecked.toString(),
-            cabanglyn = cbCuciSetrika.isChecked.toString(),
+            namalyn = layananDipilih.joinToString(", "),
+            hargalyn = totalHarga.toString(),
+            cabanglyn = "Cabang A" // Ganti sesuai logika aplikasi Anda
         )
 
         layananBaru.setValue(data)
@@ -103,4 +123,5 @@ class LayananLaundry : AppCompatActivity() {
                 Toast.makeText(this, "Gagal menyimpan data", Toast.LENGTH_SHORT).show()
             }
     }
+
 }

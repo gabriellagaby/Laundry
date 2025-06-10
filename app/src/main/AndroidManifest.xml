@@ -4,6 +4,11 @@
     package="com.gabriella15.laundry">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="REQUEST_BLUETOOTH_PERMISSIONS"/>
 
     <application
         android:allowBackup="true"
@@ -15,45 +20,69 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
+
         <activity
-            android:name=".MetodepembayaranActivity"
+            android:name=".Cabang.TambahanCabang"
             android:exported="false" />
         <activity
-            android:name=".ActivitymetodepembayaranMain2Activity"
+            android:name=".cabang.DataCabang"
             android:exported="false" />
         <activity
-            android:name=".DatatambahanActivity"
+            android:name=".Transaksi.InvoiceTransaksi"
             android:exported="false" />
         <activity
-            android:name=".pelanggan.PilihpelangganActivity"
+            android:name=".Transaksi.KonfirmasiTransaksi"
             android:exported="false" />
         <activity
-            android:name=".PilihlayananActivity"
+            android:name=".Transaksi.PilihTambahan"
             android:exported="false" />
         <activity
-            android:name=".Pegawai.tambahpegawai"
+            android:name=".Transaksi.PilihLayanan"
             android:exported="false" />
         <activity
-            android:name=".Layanan"
+            android:name=".Transaksi.PilihPelanggan"
             android:exported="false" />
         <activity
-            android:name=".dialog"
+            android:name=".Transaksi.DataTransaksi"
             android:exported="false" />
         <activity
-            android:name=".pelanggan.DataPelanggan"
+            android:name=".Tambahan.TambahTambahan"
             android:exported="false" />
         <activity
-            android:name=".pelanggan.tambahpelanggan"
+            android:name=".Tambahan.DataTambahan"
             android:exported="false" />
+        <activity
+            android:name=".laporan.DataLaporan"
+            android:exported="false" />
+
+        <!-- Launcher Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Layanan.tambahlayanan"
+            android:exported="false" />
+        <activity
+            android:name=".Layanan.Datalayanan"
+            android:exported="false" />
+        <activity
+            android:name=".Pegawai.tambahpegawai"
+            android:exported="false" />
+        <activity
+            android:name=".Pegawai.Datapegawai"
+            android:exported="false" />
+        <activity
+            android:name=".pelanggan.Tambahpelanggan"
+            android:exported="false" />
+        <activity
+            android:name=".pelanggan.Datapelanggan"
+            android:exported="false" />
     </application>
 
 </manifest>

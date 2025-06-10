@@ -13,7 +13,7 @@ import com.gabriella15.laundry.R
 import com.gabriella15.laundry.modeldata.ModelPelanggan
 import com.google.firebase.database.FirebaseDatabase
 
-class tambahpelanggan : AppCompatActivity() {
+class Tambahpelanggan : AppCompatActivity() {
     val database = FirebaseDatabase.getInstance()
     val myRef = database.getReference("pelanggan")
     lateinit var etNamapel: EditText

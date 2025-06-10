@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
-    tools:context=".Cabang.DataCabangActivity">
+    tools:context=".cabang.DataCabang">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -95,7 +95,7 @@
             android:backgroundTint="#B99470"/>
 
         <Button
-            android:id="@+id/lihatpgw"
+            android:id="@+id/lihatcabang"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/Lihat"
